@@ -1,0 +1,13 @@
+{
+    "name": "komarov/feedback",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "NikitaKrivulin",
+            "email": "krivulin.nikita@yandex.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
