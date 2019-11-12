@@ -19,7 +19,7 @@ class DataBase
 
     public function query(string $sql, array $params = [])
     {
-       $stmt= $this->dbConnect->prepare($sql);
+       $stmt = $this->dbConnect->prepare($sql);
        $stmt->execute($params);
        return $stmt;
     }
@@ -28,6 +28,10 @@ class DataBase
         $stmt = $this->query($sql,$params);
         $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
         return $data;
+    }
+    public function insertMessage()
+    {
+
     }
 }
 

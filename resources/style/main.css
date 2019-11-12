@@ -1,0 +1,125 @@
+html{
+    font-family: arial,sans-serif;
+}
+.main_box{
+    max-width: 800px;
+    margin: auto;
+}
+.def_box {
+    margin: 10px auto 10px auto;
+    border: 1px solid #dcdcdc;
+    padding: 15px 20px;
+    box-shadow: rgb(115, 115, 115) 0px 4px 20px;
+    background: -webkit-radial-gradient(circle, rgba(255,255,255,1) 0%, rgb(239, 239, 239) 100%);
+    border-radius: 5px;
+}
+.h1_class{
+    text-align:center;
+    font-size:1.3em;
+    margin: 0;
+    font-weight: normal;
+}
+.input_text {
+    font-size: 1.05em;
+    border: 1px solid #dadada;
+    display: block;
+    height: 45px;
+    padding: 5px 10px;
+    width: 100%;
+    margin: 1.1em 0 1.1em 0;
+    box-sizing: border-box;
+}
+.button{
+    display: inline-block;
+    padding: 6px 20px;
+    margin: 0;
+    cursor: pointer;
+    border: 1px solid #bbb;
+    overflow: visible;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background-color .2s ease-out;
+    background-clip: padding-box; /* Fix bleeding */
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .3),
+    0 2px 2px -1px rgba(0, 0, 0, .5),
+    0 1px 0 rgba(255, 255, 255, .3) inset;
+    background-color: #cc80ca;
+    border-color: #d183d6;
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0,0,0,.2);
+    letter-spacing: 0.05em;
+    font-size: 1.13em;
+}
+.button:hover{
+    background-color: #b873b9;
+}
+.button:active{
+    position: relative;
+    top: 1px;
+    text-shadow: none;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .3) inset;
+    background: #924288;
+}
+.message_one{
+    border: 1px solid #CCCCCC;
+    padding: 5px 15px 5px 15px;
+    margin: 10px;
+    border-radius: 4px;
+}
+.message_top{
+
+}
+.message_fio{
+    font-size: 1.1em;
+}
+.message_phone{
+    font-size: 0.8em;
+    color: #8e8e8e;
+    font-style: oblique;
+}
+.message_data{
+    color: #8e8e8e;
+}
+textarea {
+    font-family: inherit;
+}
+.message_text{
+    word-break: break-word;
+}
+.captcha_img_form
+{
+    display: block;
+    float: left;
+    position: unset;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.input_text_captcha{
+    display: block;
+    width: 25%;
+    margin: 0;
+    float: left;
+    height: 50px;
+}
+.buttton_captcha{
+    float: right;
+    display: block;
+    margin-top: 13px;
+}
+@media screen and (max-width: 768px) {
+    .buttton_captcha{
+        float: none;
+        margin: 10px auto 0 auto;
+    }
+    .input_text_captcha
+    {
+        margin: 10px auto;
+        float: none;
+        width: 100%;
+    }
+    .captcha_img_form{
+        float: none;
+        margin: 10px auto;
+    }
+}
