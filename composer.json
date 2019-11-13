@@ -4,10 +4,12 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "NikitaKrivulin",
-            "email": "krivulin.nikita@yandex.ru"
+            "name": "Ruslan",
+            "email": "ruslasy@yandex.ru"
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "justinrainbow/json-schema": "^5.0@dev"
+    }
 }

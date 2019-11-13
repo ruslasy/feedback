@@ -6,9 +6,25 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit8370426d1f1c1fc5c730a7e0d0472e06
 {
+    public static $prefixLengthsPsr4 = array (
+        'J' => 
+        array (
+            'JsonSchema\\' => 11,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'JsonSchema\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/justinrainbow/json-schema/src/JsonSchema',
+        ),
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->prefixLengthsPsr4 = ComposerStaticInit8370426d1f1c1fc5c730a7e0d0472e06::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit8370426d1f1c1fc5c730a7e0d0472e06::$prefixDirsPsr4;
 
         }, null, ClassLoader::class);
     }
