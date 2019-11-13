@@ -47,6 +47,7 @@ class Controller extends MainController
                 ]
             ]);
         if (!$validator->isValid()) { 
+            $err = '';
             foreach ($validator->getErrors() as $error) {
                 $err .= $error['property'].' : '.$error['message'];
             }         
