@@ -18,10 +18,10 @@ class Message extends Model
         return json_encode($this->getMessages());
     }
 
-    public function appendMessage($json)
+    public function appendMessage($fio, $email, $message)
     {
         $sql = "INSERT INTO message (fio, email, message) VALUES (?,?,?)";
-        App::$database->query($sql,$this->putInOrder([$json['fio'],$json['email'],$json['message']]));
+        App::$database->query($sql,$this->putInOrder([$fio,$email,$message]));
     }
 
     public function putInOrder(array $params)
