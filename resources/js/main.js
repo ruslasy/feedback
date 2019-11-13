@@ -28,14 +28,13 @@ function refrashMEssage()
 async function sendMessage()
 { //Отправка сообщений
     let info = {
-        method:'add_base',
         fio: document.getElementById('fio').value,
         email: document.getElementById('email').value,
         message: document.getElementById('message').value
     };
 
     let json = JSON.stringify(info);
-    let resp = await fetch('/Api/AddMessage/api.php', {
+    let resp = await fetch('/Api/AddMessage/', {
         method: 'POST',
         headers: {'Content-Type': 'application/json;charset=utf-8'},
         body: json
